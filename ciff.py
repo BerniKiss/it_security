@@ -184,9 +184,6 @@ class CIFF:
         new_ciff = CIFF()
         bytes_read = 0
         # the following code can throw Exceptions at multiple lines
-        # TODO: surround the parsing code with a try-except block and
-        # TODO: set the is_valid property to False
-        # TODO: if an Exception has been raised
         try:
             with open(file_path, "rb") as ciff_file:
                 # read the magic bytes
